@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ilaanchik | Graphic Designer</title>
+    <!-- Подключаем шрифт Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Базовые стили */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #111111;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        /* Шапка сайта */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #111111;
+            margin-left: 30px;
+            font-weight: 500;
+        }
+
+        /* Главный экран и Обо мне */
+        .hero {
+            padding: 100px 0 60px;
+            text-align: left;
+        }
+        .hero h1 {
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            max-width: 800px;
+            letter-spacing: -1.5px;
+        }
+        .about-text {
+            font-size: 20px;
+            color: #555555;
+            max-width: 700px;
+            margin-bottom: 60px;
+        }
+
+        /* Стиль для плейсхолдеров (окошек для картинок) */
+        .placeholder {
+            background-color: #f7f7f7;
+            border: 1px dashed #cccccc;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888888;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+        }
+
+        /* Специфичные размеры окошек */
+        .ph-portrait { height: 500px; margin-bottom: 80px; }
+        .ph-hero-case { height: 600px; margin-bottom: 40px; }
+        .ph-square { height: 400px; }
+        .ph-tall { height: 600px; }
+        .ph-wide { height: 500px; margin-bottom: 20px; }
+
+        /* Разделы кейса */
+        .case-study {
+            padding: 80px 0;
+            border-top: 1px solid #eeeeee;
+        }
+        .case-header h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .case-header p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* Сетки для контента */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        .text-block h3 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .text-block p {
+            color: #444;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="logo">ilaanchik</div>
+            <nav>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
+        </header>
+
+        <!-- HERO & ABOUT -->
+        <section class="hero" id="about">
+            <h1><span style="white-space: nowrap;">Graphic Designer & Art Director.</span><br>Создаю бренды и айдентику со смыслом.</h1>
+            <p class="about-text">
+                Привет, я ilaanchik. Я помогаю брендам обрести свое визуальное лицо: разрабатываю логотипы, фирменный стиль и комплексные визуальные системы с нуля. У меня профильное образование и сильная база в композиции. Я веду проект от мудбордов до готовых макетов, активно используя AI-инструменты для поиска креативных решений.
+            </p>
+            <!-- Плейсхолдер 1: Твое фото -->
+            <img src="П1.png" style="width: 100%; height: 500px; object-fit: cover; border-radius: 8px; margin-bottom: 80px;">
+        </section>
+
+        <!-- CASE STUDY: ELAANYCH -->
+        <section class="case-study" id="portfolio">
+            <div class="case-header">
+                <h2>ELAANYCH</h2>
+                <p>Brand Identity, Character Design & Art Direction</p>
+            </div>
+            
+            <!-- Плейсхолдер 2: Главный баннер -->
+            <img src="П2 превью.gif" style="width: 100%; height: 600px; object-fit: cover; border-radius: 8px; margin-bottom: 40px;">
+
+            <!-- Контекст (2 колонки) -->
+            <div class="grid-2">
+                <div class="text-block">
+                    <h3>О проекте</h3>
+                    <p>ELAANYCH — бренд премиальных дизайнерских аксессуаров (кастомных брелков из клавиш механических клавиатур). Аудитория бренда — IT-специалисты, геймеры, дизайнеры и энтузиасты, ценящие эстетику качественных девайсов.</p>
+                </div>
+                <div class="text-block">
+                    <h3>Задача</h3>
+                    <p>Разработать айдентику с нуля. Создать строгий визуальный язык в стиле «технического минимализма», который подчеркивал бы практичность продукта, с потенциалом перехода бренда к живой, эмоциональной истории через маскота.</p>
+                </div>
+            </div>
+
+            <!-- Типографика и Логотип -->
+            <div class="text-block">
+                <h3>Логотип и Типографика: Скрытые смыслы</h3>
+            </div>
+            <div class="grid-2">
+                <img src="П3 Типографика Inter.png" style="width: 100%; height: 400px; object-fit: contain; background-color: #f7f7f7; border-radius: 8px;">
+                <img src="П4 как буквы E, L, A стали лицом.png" style="width: 100%; height: 400px; object-fit: contain; background-color: #f7f7f7; border-radius: 8px;">
+            </div>
+            <img src="П5 лицо крупно.png" style="width: 100%; height: 500px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+
+            <!-- Продукт в среде -->
+            <div class="text-block">
+                <h3>Продукт в среде (Технический минимализм)</h3>
+                <p>Для оптимизации контента я внедрила в рабочий процесс нейросети: обычные фото с телефона превращались в идеальную студийную предметную съемку.</p>
+            </div>
+            <div class="grid-3">
+                <img src="П6 Фото продукта 1.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                <img src="П6 Фото продукта 2.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                <img src="П6 Фото продукта 3.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+            </div>
+
+            <!-- Эволюция и Сторителлинг -->
+            <div class="text-block">
+                <h3>Эволюция бренда: 3D и Сторителлинг</h3>
+                <p>За строгим логотипом прячется живой персонаж. Когда хозяин не смотрит, брелок «оживает», пытаясь подражать своему владельцу, как восьмилетний ребенок. Эта концепция открыла двери для 3D-сцен и эмоционального мерча.</p>
+            </div>
+            <!-- Большая 3D-сцена на всю ширину -->
+            <img src="П7 Баскетбол.png" style="width: 100%; height: 500px; object-fit: cover; border-radius: 8px; margin-bottom: 40px;">
+
+            <!-- Две 3D-сцены под ней -->
+            <div class="grid-2">
+                <img src="П8 фото 1.png" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                <img src="П8 фото 2.png" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+            </div>
+
+            <!-- Точки контакта -->
+            <div class="text-block">
+                <h3>Точки контакта</h3>
+            </div>
+            <div class="grid-2">
+                <img src="П9 Мерч футболка.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                <img src="П10 Мокап Instagram.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+            </div>
+            
+            <p style="text-align: center; color: #888; font-size: 14px; margin-top: 40px;">
+                Моя роль в проекте: Арт-дирекшн, разработка нейминга, логотип, AI-продакшен, дизайн упаковки, контент.
+            </p>
+        </section>
+<!-- CASE STUDY: ARTEL (Кейс №2) -->
+        <section class="case-study" id="portfolio-2">
+            <div class="case-header">
+                <h2><span style="color: #1A362D;">ARTEL</span></h2>
+                <p>SMM, Content & Social Media Identity</p>
+            </div>
+            
+            <!-- Плейсхолдер 11: Главный баннер -->
+            <img src="П11 Превью артель.png" style="width: 100%; height: 600px; object-fit: cover; border-radius: 8px; margin-bottom: 40px;">
+
+            <!-- Контекст (2 колонки) -->
+            <div class="grid-2">
+                <div class="text-block">
+                    <h3>О проекте</h3>
+                    <p>Artel — бренд авторских дизайнерских украшений, созданных из ценных пород дерева (гренадил, венге, груша), перламутра и металла. Каждое изделие — это ручная работа с упором на природные фактуры и архитектурные формы.</p>
+                </div>
+                <div class="text-block">
+                    <h3>Задача</h3>
+                    <p>Упаковать бренд для digital-среды. Разработать контент-стратегию и Social Media айдентику, которая выделит продукт в ленте. Создать качественные фото-демонстрации продукта и внедрить новую визуальную систему.</p>
+                </div>
+            </div>
+
+            <!-- Идея и Метафора -->
+            <div class="text-block">
+                <h3>Визуальный язык: Природа и Контраст</h3>
+                <p>Основой новой айдентики для соцсетей стали минималистичные черно-белые силуэты деревьев — тонкая отсылка к происхождению материалов. Чтобы разбавить строгий монохром, в систему был внедрен благородный <span style="color: #1A362D; font-weight: bold;">глубокий хвойный</span> акцентный цвет.</p>
+            </div>
+            <div class="grid-2">
+                <img src="П 12 Паттерн.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                <img src="П 13 палитра.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+            </div>
+
+            <!-- Продающий контент -->
+            <div class="text-block">
+                <h3>Art Direction & Product Photography</h3>
+                <p>Ключевой этап работы — создание визуального контента. Я организовала съемки, сделав фокус на том, как серьги взаимодействуют с телом, подчеркивая их правильную посадку, масштаб и продолжение линий анатомии.</p>
+            </div>
+            <div class="grid-3">
+                <img src="П 14 серьги.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                <img src="П 15 упаковка.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                <img src="П 16 бублики.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+            </div>
+
+            <!-- Точки контакта (Среда) -->
+            <div class="text-block">
+                <h3>Social Media Design & Touchpoints</h3>
+                <p>Новая айдентика была масштабирована на digital-носители и полиграфию, создав единую бесшовную среду для покупателя.</p>
+            </div>
+            <div class="grid-2">
+                <img src="П 17 инстаграмм.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                <div class="placeholder ph-square">[ 🖼 ПЛЕЙСХОЛДЕР 18: Мокап визиток с паттерном ]</div>
+            </div>
+            
+            <p style="text-align: center; color: #888; font-size: 14px; margin-top: 40px;">
+                Моя роль в проекте: SMM-дизайн, разработка визуальной концепции, product-фотография, копирайтинг.
+            </p>
+        </section>
+    </div>
+
+</body>
+</html>
